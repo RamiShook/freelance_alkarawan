@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule blog/(.*)/([0-9]+)/ blog-post-page.php?post=$2&slug=$1
+RewriteRule blog/(.*)/([0-9]+) blog-post-page.php?post=$2&slug=$1
